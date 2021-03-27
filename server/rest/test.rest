@@ -1,0 +1,16 @@
+GET http://localhost:8000/test
+
+# Отделение одного запроса от другого
+###
+
+GET http://localhost:8000/test/lox
+
+###
+
+POST http://localhost:8000/test/lox
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "12345"
+}
