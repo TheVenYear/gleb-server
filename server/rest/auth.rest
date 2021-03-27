@@ -1,0 +1,17 @@
+POST http://localhost:8000/auth/sign-up
+Content-Type: application/json
+
+{
+  "email": "admingmail.com",
+  "password": "adminadmin"
+}
+
+###
+
+POST http://localhost:8000/auth/sign-in
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "adminadmn"
+}

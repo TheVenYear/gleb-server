@@ -14,3 +14,16 @@ Content-Type: application/json
   "email": "admin@gmail.com",
   "password": "12345"
 }
+
+###
+
+GET http://localhost:8000/todos/
+
+###
+
+POST http://localhost:8000/todos/
+Content-Type: application/json
+
+{
+  "title": "Глебчик"
+}

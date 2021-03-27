@@ -3,6 +3,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import testRouter from './routers/test-router';
+import todosRouter from './routers/todos-router';
+import authRouter from './routers/auth-router';
 
 // Запуск dotenv и считывает файл .env
 dotenv.config();
@@ -23,6 +25,8 @@ app.use(cors());
 
 // Использование роутера
 app.use('/test', testRouter);
+app.use('/todos', todosRouter);
+app.use('/auth', authRouter);
 
 // Подключение к базе
 mongoose
